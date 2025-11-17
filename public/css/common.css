@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+.content-display{
+    border: 1px solid #bc7af91f;
+    width: 90%;
+    margin: 3rem auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px 3px rgba(128, 128, 128, 0.51);
+}
+
+.title{
+    margin-bottom: .5rem;
+    color: #BC7AF9;
+    font-family: 'Montez', cursive;
+    font-size: 2rem;
+}
+
+.content-display p{
+    line-height: 1.5rem;
+    color: rgb(89, 83, 83);
+    letter-spacing: .1rem;
+}
+
+/* blog display */
+.blog-display{
+    width: 95%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.blog-display p{
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+.read-more{
+    text-decoration: none;
+    color: #BC7AF9;
+}
+
+/* footer */
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="/css/common.css">
+
+    <!-- displaying content here -->
+    
+    <!-- <div class="content-display">
+        <h3 class="title">Lorem, ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus maxime omnis in nihil beatae a perspiciatis ducimus saepe exercitationem?</p>
+    </div> -->
+
+    <% data.forEach(thought => { %>
+        <% if(thought.category === 'thoughts'){ %>
+            <div class="content-display">
+                <h3 class="title"><%= thought.title %></h3>
+                <p><%= thought.content %></p>
+            </div>
+        <% } %>
+    <% }) %>
+
+    
+<%- include("partials/footer.ejs") %>
+    

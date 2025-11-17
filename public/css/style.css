@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav-bar{
+    letter-spacing: .1rem;
+    color: #FFF;
+    margin-bottom: 3rem;
+    padding: .5rem;
+    background-color: #FFA1F5;
+    background-color: #BC7AF9;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper{
+    /* border: 2px solid red; */
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+fieldset{
+    border: 1px solid #BC7AF9;
+    box-shadow: 0 0 20px 5px #BC7AF9;
+}
+
+fieldset form{
+    /* border: 2px soid blue; */
+    height: 45vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+input{
+    padding: .7rem;
+    outline: none;
+    border: 3px solid #BC7AF9;
+}
+
+fieldset h2{
+    text-align: center;
+    margin-top: 1rem;
+    color: #BC7AF9;
+
+}
+
+.item{
+    display: inline-block;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.item input{
+    border-radius: 15px;
+    display: inline-block;
+    width: 49%;
+}
+
+.btn{
+    padding: .7rem;
+    border: none;
+    background-color: #BC7AF9;
+    color: #fff;
+    transition: 500ms linear all;
+}
+
+.btn:hover{
+    border: 1px solid #BC7AF9;
+    background-color: #fff;
+    color: #BC7AF9;
+}

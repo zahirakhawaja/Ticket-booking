@@ -1,0 +1,162 @@
+/* nav links */
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 .5rem;
+}
+
+.nav-link:nth-child(2){
+    border: 2px solid #fff;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+}
+
+.nav-link:nth-child(2):hover{
+    background-color: #fff;
+    color: #BC7AF9;
+    border: none;
+}
+
+.slides{
+    position: relative;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    background-color: #E4E4D0;
+    height: 60vh;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    /* border: 2px solid blue; */
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 45vh;
+    display: flex;
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+    transition: all 1000ms linear;
+}
+
+.card div{
+    /* border: 2px solid red; */
+}
+
+.content-container{
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+.img-container{
+    width: 25%;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-btn{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background:none;
+    border: none;
+    font-size: 1.5rem;
+    color: #9400FF;
+}
+
+.right{
+    right:10%;
+}
+
+.left{
+    left:10%;
+}
+
+.slide-btn:hover{
+    color: #BC7AF9;
+}
+
+/* categories */
+.categories{
+    width: 90%;
+    margin: 4rem auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.category-link{
+    height: 140px;
+    width: 140px;
+    display: block;
+    border: 1px solid #D8B4F8;
+    box-shadow: 0 0 15px 5px #D8B4F8;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #9400FF;
+    font-weight: bold;
+    justify-content: center;
+    transition: all 200ms linear;
+}
+
+.category-link:hover{
+    background-color: #bc7af9b0;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.compose-form{
+    width: 70%;
+    margin: 6rem auto;
+    height:60vh;
+    border: 1px solid #D8B4F8;
+    box-shadow: 0 0 20px 3px #BC7AF9;
+    position: relative;
+}
+
+form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.compose-form  input,select,textarea,.btn{
+    width: 90%;
+    border:1px solid #BC7AF9;
+    display: block;
+}
+
+/* footer */
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #BC7AF9;
+    color: #fff;
+    letter-spacing: .1rem;
+}

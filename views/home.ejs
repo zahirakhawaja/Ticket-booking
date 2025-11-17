@@ -1,0 +1,72 @@
+<%- include("partials/header.ejs") %>
+<script src="./js/home.js" defer></script>
+<!-- slides section -->
+<div class="slides">
+        <div class="card active">
+            <div class="img-container ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdZpEDslKnjBmPC6dlF6pf9Q2m1o5aMdHwg&usqp=CAU" alt="img">
+            </div>
+            <div class="content-container">
+                <h2 style="color: #9400FF;">#Fact Number 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium facilis sapiente similique,
+                    praesentium consequuntur quia ex libero recusandae architecto
+                <p>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="img-container">
+                <img src="https://cdn.pixabay.com/photo/2022/05/21/06/52/standup-paddleboarding-7210815_640.jpg" alt="img">
+            </div>
+            <div class="content-container">
+                <h2 style="color: #9400FF;">#Fact Number 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium facilis sapiente similique,
+                    praesentium consequuntur quia ex libero recusandae architecto
+                <p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://cdn.pixabay.com/photo/2022/03/13/09/22/couple-7065652_640.jpg" alt="img">
+            </div>
+            <div class="content-container">
+                <h2 style="color: #9400FF;">#Fact Number 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium facilis sapiente similique,
+                    praesentium consequuntur quia ex libero recusandae architecto
+                <p>
+            </div>
+        </div>
+        <button class="left slide-btn">⟸</button>
+        <button class="right slide-btn">⟹</button>
+    </div>
+    
+    <!-- categories section -->
+    <h1 style="color: #9400FF; text-align: center; margin-top: 4rem;">Categories</h1>
+    <div class="categories">
+        <a href="/thoughts" class="category-link">Thoughts</a>
+        <a href="/shayari" class="category-link">Shayari</a>
+        <a href="/blog" class="category-link">Blog</a>
+        <a href="/quotes" class="category-link">Quotes</a>
+    </div>
+    
+    <!-- compose -->
+    <div class="compose-form">
+        <h2 style="margin: 2rem 0; text-align: center; color: #9400FF;">Wanna Write Something?</h2>
+        <form action="/compose" method="post">
+
+            <select name="category" style="border:1px solid #BC7AF9; color: #9400FF; padding: .7rem;" id="categories">
+                <option value="thoughts">Thoughts</option>
+                <option value="shayari">Shayari</option>
+                <option value="blog">Blog</option>
+                <option value="quotes">Quotes</option>
+            </select>
+
+            <input type="text" name="title" placeholder="Title">
+
+            <textarea name="content" style="border:1px solid #BC7AF9; padding: .6rem; height: 7rem; " placeholder="Content"></textarea>
+
+            <button type="submit" class="btn">Compose</button>
+            
+        </form>
+    </div>
+    
+<%- include ("./partials/footer.ejs") %>
